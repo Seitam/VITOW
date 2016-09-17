@@ -13,6 +13,14 @@ This project uses code or has been inspired from:
 Unlike wifibroadcast, which is focused on live transmission, VITOW is meant to be used by non delay sensitive applications that require high-quality video transmission.  
 
 
+## How it works
+
+After almost two decades since the first 802.11 products were launched, nowadays WiFi products are ubiquitous and mature. Their standard  Moreover, WiFi adapters are inexpensive and of high quality.
+As a result, WiFi devices can be used as inexpensive radio transceivers that are capable of providing several Mbps links in a license-free band.
+However, WiFi products have inherent protocol limitations that may limit the througput or applicability in certain cases (for intance, in long range links). 
+
+
+
 ## Hardware
 
 The following list of hardware is recommended: 
