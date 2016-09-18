@@ -15,9 +15,17 @@ Unlike wifibroadcast, which is focused on live transmission, VITOW is meant to b
 
 ## How it works
 
-After almost two decades since the first 802.11 products were launched, nowadays WiFi products are ubiquitous and mature. Their standard  Moreover, WiFi adapters are inexpensive and of high quality.
+After almost two decades since the first 802.11 products were launched, nowadays WiFi products are ubiquitous, mature, inexpensive and of high quality.
 As a result, WiFi devices can be used as inexpensive radio transceivers that are capable of providing several Mbps links in a license-free band.
-However, WiFi products have inherent protocol limitations that may limit the througput or applicability in certain cases (for intance, in long range links). 
+However, WiFi products have inherent protocol limitations that may limit the througput or applicability in certain cases (for intance, in long range links).
+
+To bypass these limitations, this project uses packet injection in the transmitting side, and monitor mode in the reception side. Using this combination the limitations of the 802.11 protocol can be removed: 
+
+- By means of packet injection it is possible to customize and forge the packets that are going to be transmitted.
+- By means of monitor mode it is possible to receive any transmitted packet.
+
+VITOW is focused on the tranmission of high-quality video on a one-to-many basis (broadcast), prioritzing quality over delay. To achieve robustness, VITOW encodes the information using the LDPC-Staircase Codec. Using that codification the reception side is able to deliver smooth and seamless video even when there are severe packet losses.
+Moreover, due to its nature of one-to-many structure which implies that there are not ACK's, VITOW may be used in long range links without suffering any degradation. 
 
 
 
